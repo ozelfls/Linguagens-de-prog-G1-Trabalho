@@ -21,6 +21,11 @@ def show_chart(fig) -> None:
 
 def main() -> None:
     st.title("Consumo de Água no Brasil")
+    st.caption(
+        "Aluno: Daniel de Oliveira Teixeira Silva · "
+        "Disciplina: Linguagens de Programação · "
+        "Professor: Alexandre Neves Louzada"
+    )
     st.caption("Consumo, perdas e clima em uma base simulada de 2015 a 2024.")
 
     try:

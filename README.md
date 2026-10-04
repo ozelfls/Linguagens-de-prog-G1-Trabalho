@@ -1,5 +1,11 @@
 # Consumo de Água no Brasil
 
+**Aluno:** Daniel de Oliveira Teixeira Silva
+
+**Disciplina:** Linguagens de Programação
+
+**Professor:** Alexandre Neves Louzada
+
 Projeto de análise e visualização de uma **base simulada** com registros mensais de 2015 a 2024. O objetivo é explorar consumo, setores, desperdício, chuva e níveis de reservatórios sem atribuir os resultados à realidade hídrica brasileira.
 
 ## Executar
