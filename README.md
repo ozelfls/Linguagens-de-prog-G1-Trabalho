@@ -40,4 +40,7 @@ A carga converte datas e números, remove registros incompletos ou inválidos e 
 
 ## Publicação
 
-Publique o repositório no GitHub. Nas configurações do GitHub Pages, escolha a raiz do repositório para servir `index.html`. No Streamlit Community Cloud, selecione `app.py` como arquivo principal. Após publicar, substitua os links de demonstração da página pelos endereços gerados.
+- [Repositório GitHub](https://github.com/ozelfls/Linguagens-de-prog-G1-Trabalho)
+- [Dashboard Streamlit](https://linguagens-de-prog-g1-trabalho-stnc7qmumscphkvtdbsxba.streamlit.app/)
+
+Para publicar `index.html`, ative o GitHub Pages em **Settings → Pages**, usando a branch `main` e a pasta `/ (root)`.
