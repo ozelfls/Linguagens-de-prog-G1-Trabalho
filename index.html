@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projeto de análise de dados simulados sobre consumo de água no Brasil.">
+  <title>Consumo de Água no Brasil</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #173d49; background: #f4f8f8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.55; }
+    header { background: linear-gradient(135deg, #0b485a, #14838b); color: white; padding: 5rem max(1.5rem, calc((100vw - 1000px)/2)); }
+    header p { max-width: 680px; font-size: 1.15rem; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; margin: 0 0 1rem; }
+    h2 { margin-top: 0; }
+    main { max-width: 1000px; margin: auto; padding: 2.5rem 1.5rem 5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+    article { background: white; border: 1px solid #d9e8e8; border-radius: 14px; padding: 1.4rem; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .8rem; }
+    .button { display: inline-block; background: #fff; color: #0b485a; font-weight: 700; text-decoration: none; border-radius: 8px; padding: .75rem 1rem; margin: .5rem .5rem 0 0; }
+    .button.secondary { background: #d5efed; }
+    section { margin-top: 2.5rem; }
+    footer { border-top: 1px solid #d9e8e8; padding: 1.5rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Projeto G1 · Análise de dados com Python</div>
+    <h1>Consumo de Água no Brasil</h1>
+    <p>Uma exploração interativa de dados simulados de 2015 a 2024 para comparar consumo, perdas, chuva e reservatórios.</p>
+    <a class="button" href="notebooks/analise_consumo_agua.ipynb">Ver notebook</a>
+    <a class="button secondary" href="dados/simulacao_consumo_agua_brasil.csv">Baixar base</a>
+  </header>
+  <main>
+    <section>
+      <h2>Perguntas do projeto</h2>
+      <div class="grid">
+        <article><h3>Como o consumo evoluiu?</h3><p>Série mensal, média móvel e mapa de calor mostram mudanças ao longo do tempo.</p></article>
+        <article><h3>Onde e em quais setores?</h3><p>Comparações por estado, região e setor ajudam a explorar a composição da amostra.</p></article>
+        <article><h3>Qual é o contexto hídrico?</h3><p>Indicadores de desperdício, reservatórios e chuva apoiam uma leitura ambiental cautelosa.</p></article>
+      </div>
+    </section>
+    <section>
+      <h2>Como a análise funciona</h2>
+      <p>O projeto usa Pandas para preparar os registros e calcular indicadores; Matplotlib e Seaborn para os gráficos; e Streamlit para os filtros e o dashboard. A correlação de Pearson resume a associação entre chuva média e consumo mensal na base.</p>
+      <p><strong>Limite dos dados:</strong> esta é uma simulação com cobertura desigual entre estados. Rankings e correlações descrevem apenas a amostra; não são estimativas oficiais nem demonstram causalidade.</p>
+    </section>
+    <section>
+      <h2>Explore o projeto</h2>
+      <p>O código e as instruções de execução estão no <a href="README.md">README</a>. O dashboard pode ser executado localmente com <code>streamlit run app.py</code>. Quando publicado, acrescente aqui o link do Streamlit Community Cloud.</p>
+    </section>
+  </main>
+  <footer>Projeto acadêmico · Base de dados simulada</footer>
+</body>
+</html>
