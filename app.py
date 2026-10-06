@@ -26,6 +26,7 @@ def main() -> None:
         "Disciplina: Linguagens de Programação · "
         "Professor: Alexandre Neves Louzada"
     )
+    st.markdown("[Repositório no GitHub](https://github.com/ozelfls/Linguagens-de-prog-G1-Trabalho)")
     st.caption("Consumo, perdas e clima em uma base simulada de 2015 a 2024.")
 
     try:
